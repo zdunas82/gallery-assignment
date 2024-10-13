@@ -1,46 +1,69 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
   background-image: url("./img/img1.jpg");
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #thumbnail-container {
   display: flex;
-  position: fixed;
   justify-content: center;
+  position: fixed;
+  top: 30px;
+  gap: 20px;
   width: 100%;
-  align-items: center;
-  gap: 60px;
+  flex-wrap: wrap;
 }
 
 #thumbnail-container img {
-  margin-top: 50px;
-  height: 140px;
+  height: 100px;
   width: auto;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: transform 0.3s ease;
 }
 
+#thumbnail-container img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.control-btn {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  gap: 20px;
+}
+
+#btn-stop {
+  background-color: #ff4c4c;
+  color: rgb(255, 255, 255); 
+  font-size: 25px;
+  padding: 15px 20px;
+  border: solid 1px black;
+  border-radius: 10px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btn-stop:hover {
+  background-color: #32cd32;
+  transform: scale(1.1);
+}
 
 img:hover {
   cursor: pointer;
   animation: bounce 0.5s ease-in-out;
   transform: scale(1.4);
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3); 
+  border: 1px solid black;
 }
 
 #display-img {
  background-size: cover;
 }
 
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1.4);
-  }
-}

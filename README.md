@@ -1,7 +1,7 @@
 # gallery-assignment
 gallery-assignment
 
-Style Bacground Propery
+Style Bacground property
 https://www.w3schools.com/jsref/prop_style_backgroundimage.asp
 
 Template Strings Variables
