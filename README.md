@@ -18,5 +18,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 setAttibutes method to give 'tabindex' to imgs
 https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
 
+Media Queries
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+
 
 
